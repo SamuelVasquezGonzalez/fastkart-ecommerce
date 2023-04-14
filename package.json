@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "json-s": "json-server --watch src/db1.json"
+    "json-s": "json-server --watch src/db.json"
   },
   "keywords": [],
   "author": "",
