@@ -147,7 +147,6 @@ function actualizarCarrito(){
             precioTotal = precios.reduce((accumulator, currentValue) => {
                 return accumulator + currentValue;
             });
-            console.log(precioTotal)
             carritoContainer.innerHTML += `
                 <div class="product-in-cart">
                     <div class="cart-img">

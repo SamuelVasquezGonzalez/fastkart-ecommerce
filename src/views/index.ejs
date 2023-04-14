@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="buy-buttons">
                                     <a href="/cart" class="see-cart cart-btn">View Cart</a>
-                                    <a href="/checkout" class="checkout cart-btn">Checkout</a>
+                                    <a href="/cart" class="checkout cart-btn">Checkout</a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
         <article class="discounts-banner">
             <div class="first-images">
                 <div class="big-image">
-                    <img src="./images/veg1.png" alt="">
+                    <img src="./images/v3g5.png" alt="">
                 </div>
                 <div class="small-images">
                     <img src="./images/veg2.png" alt="">
@@ -158,10 +158,10 @@
                         <div class="parametros">
                             <i class="ri-time-line"></i>
                             <p>Expires in:</p>
-                            <p class="days">349:</p>
-                            <p class="hours"> 3:</p>
-                            <p class="minutes"> 45:</p>
-                            <p class="seconds"> 37</p>
+                            <p class="days"></p>
+                            <p class="hours"></p>
+                            <p class="minutes"></p>
+                            <p class="seconds"></p>
                         </div>
                     </div>
                 </div>
@@ -269,35 +269,3 @@
     <script src="./js/getProductos.js"></script>
 </body>
 </html>
-
-
-
-
-<div class="userInfo">
-    <p class="userName"><strong>Name</strong> ${comprador.nombre}</p>
-    <p class="phoneNumber"><strong>Contact Phone:</strong> ${comprador.telefono}</p>
-    <p class="direccion"><strong>Address:</strong> ${comprador.direccion}</p>
-    <details class="comprados no-mg">
-      <summary>Productos comprados</summary>
-            <div class="cart-product">
-              <img src="${producto.img}" alt="">
-              <div class="product-info">
-                <p class="cart-title">${producto.titulo}</p>
-                <p class="sold-by"><strong>Sold By:</strong> ${producto.autor}</p>
-                <p class="quantity"><strong>Quantity:</strong> -${producto.gramos}</p>
-              </div>
-              <div class="cart-card-price">
-                <p class="min-p">Price</p>
-                <div class="prices">
-                  <p class="prince">$${producto.precioFinal}</p>
-                  <p class="discount-price">$${producto.realPrice}</p>
-                </div>
-                <p class="save-price">You save: <strong>$${(producto.realPrice - producto.precioFinal).toFixed(2)}</strong></p>
-              </div>
-              <div class="total-price-cart">
-                <p class="min-p">Total</p>
-                <p class="totalPrice">$${producto.precioMult}</p>
-              </div>
-            </div>
-    </details>
-  </div>

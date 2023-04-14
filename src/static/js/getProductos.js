@@ -192,7 +192,6 @@ function actualizarCarrito(){
             precioTotal = precios.reduce((accumulator, currentValue) => {
                 return accumulator + currentValue;
             });
-            console.log(precioTotal)
             carritoContainer.innerHTML += `
                 <div class="product-in-cart">
                     <div class="cart-img">
@@ -276,3 +275,35 @@ const upBtn = document.querySelector(".up")
 upBtn.addEventListener("click", ()=>{
     document.documentElement.scrollTop = 0;
 })
+
+
+
+// CONTADOR
+const $days = document.querySelector('.days'),
+$hours = document.querySelector('.hours'),
+$minutes = document.querySelector('.minutes'),
+$seconds = document.querySelector('.seconds')
+
+//Fecha a futuro
+const countdownDate = new Date('12 25, 2023 10:28:00').getTime();
+
+let interval = setInterval(function(){
+    //Obtener fecha actual y milisegundos
+    const now = new Date().getTime();
+
+    //Obtener las distancias entre ambas fechas
+    let distance = countdownDate - now;
+
+    //Calculos a dias-horas-minutos-segundos
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24 )) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60 )) / (1000));
+
+    //Escribimos resultados
+    $days.innerHTML = `${days}:`;
+    $hours.innerHTML = `${hours}:`;
+    $minutes.innerHTML = `${minutes}:`;
+    $seconds.innerHTML = ('0' + seconds).slice(-2);
+
+}, 1000);
