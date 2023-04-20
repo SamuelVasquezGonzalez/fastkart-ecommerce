@@ -131,7 +131,7 @@ function actualizarProducto(id, autor, cantidad, titulo, precioDescuento, precio
         })
         .then(respuesta =>{
             if(!respuesta.ok){
-                throw new Error("Hubo un error al eliminar el producto")
+                throw new Error("Hubo un error al actualizar el producto")
             }
             showMsm("carrito actializado", "Se ha actualizado el producto")
             setTimeout(() => {
@@ -179,7 +179,7 @@ function crearProducto(){
         </div>
     `;
 
-      // ACTUALIZAR EL PRODUCTO SELECCIONADO
+      // CREAR EL PRODUCTO
       formulario.addEventListener("submit", (e)=>{
 
         e.preventDefault()

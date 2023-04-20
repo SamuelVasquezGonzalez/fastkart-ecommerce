@@ -83,8 +83,6 @@ mostrarCompradores()
 // Contenedor de los objetos de la pantalla principal
 let productosContainer = document.querySelector(".products-admin")
 
-// Funcion que se encarga de mostrar la informacion y de darle la funcionalidad a las tarjeta(enviar a fav, carrito, agregar o quitar)
-// el parametro auth sirve para identificar de a donde vienen los datos,(fetch = false, productosFiltrados = true )
 function mostrarData (data) {
     productosContainer.innerHTML = `
         <a href="/createUpdateProducts" class="def dife">

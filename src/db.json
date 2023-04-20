@@ -21,16 +21,6 @@
       "categoriaId": 1
     },
     {
-      "id": 3,
-      "title": "Cafe Nescafe 600G",
-      "rutaImg": "./images/cafe.png",
-      "precio": 5.14,
-      "RealPrice": 8.21,
-      "gramosUnidades": "600G",
-      "autor": "Luis",
-      "categoriaId": 2
-    },
-    {
       "id": 4,
       "title": "Camarones 500G",
       "rutaImg": "./images/camarones.png",
@@ -279,6 +269,16 @@
       "categoriaId": 5,
       "RealPrice": 17.6,
       "gramosUnidades": "500g"
+    },
+    {
+      "title": "producto nuevo",
+      "rutaImg": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_231353.png&f=1&nofb=1&ipt=6fa55895181199f4faaf3b897477184502c7b6bd487e364c63f5fe18fafa2ac9&ipo=images",
+      "precio": 13.5,
+      "RealPrice": 17.2,
+      "gramosUnidades": "3x",
+      "autor": "Pedro",
+      "categoriaId": 4,
+      "id": 31
     }
   ],
   "categoria": [
@@ -316,9 +316,56 @@
     }
   ],
   "compradores": [
-
+    {
+      "nombre": "Samuel",
+      "direccion": "cl 42sur #65a - 179",
+      "telefono": "3004593194",
+      "idProducts": 1,
+      "id": 1
+    }
   ],
   "comprados": [
-
+    {
+      "pagado": "42.27",
+      "telefonoComprador": "3004593194",
+      "allProducts": [
+        {
+          "id": "1",
+          "cantidad": 1,
+          "precioFinal": 7.16,
+          "titulo": "Paquete de Avocados x5",
+          "img": "http://localhost:3500/images/avocado.png",
+          "autor": "Ana",
+          "gramos": "5 unidades",
+          "realPrice": 10.5,
+          "precioMult": 7.16
+        },
+        {
+          "id": "2",
+          "cantidad": 1,
+          "precioFinal": 23.1,
+          "titulo": "Bolsa de Brocoli",
+          "img": "http://localhost:3500/images/brocoli.png",
+          "autor": "Luis",
+          "gramos": "1 unidad",
+          "realPrice": 26.5,
+          "precioMult": 23.1
+        },
+        {
+          "id": "3",
+          "cantidad": 1,
+          "precioFinal": 5.14,
+          "titulo": "Cafe Nescafe 600G",
+          "img": "http://localhost:3500/images/cafe.png",
+          "autor": "Luis",
+          "gramos": "600G",
+          "realPrice": 8.21,
+          "precioMult": 5.14
+        }
+      ],
+      "nombre": "Samuel",
+      "direccion": "cl 42sur #65a - 179",
+      "id": 1
+    }
   ]
 }
