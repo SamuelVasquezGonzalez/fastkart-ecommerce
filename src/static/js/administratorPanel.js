@@ -57,7 +57,7 @@ function mostrarCompradores (){
                 compradoresContainer.innerHTML += `
                 <div class="userInfo">
                   <p class="userName"><strong>Name</strong> ${data[i].nombre}</p>
-                  <p class="phoneNumber"><strong>Contact Phone:</strong> ${data[i].telefono}</p>
+                  <p class="phoneNumber"><strong>Contact Phone:</strong> ${data[i].telefonoComprador}</p>
                   <p class="direccion"><strong>Address:</strong> ${data[i].direccion}</p>
                   <details class="comprados no-mg">
                       <summary>Productos comprados</summary>

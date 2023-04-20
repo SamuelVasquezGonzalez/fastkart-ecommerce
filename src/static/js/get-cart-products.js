@@ -299,7 +299,6 @@ function actualizarPayBody (allProducts){
             allProducts,
             nombre,
             direccion,
-            telefono
         }
 
         fetch("http://localhost:3000/comprados",{
@@ -316,7 +315,9 @@ function actualizarPayBody (allProducts){
                 let newBody = {
                     pagado: precioTotal.toFixed(2),
                     telefonoComprador: telefono,
-                    allProducts: [...elProductExistente.allProducts, ...allProducts, telefono]
+                    nombre,
+                    direccion,
+                    allProducts: [...elProductExistente.allProducts, ...allProducts]
                 }
 
                 fetch(`http://localhost:3000/comprados/${elProductExistente.id}`,{
