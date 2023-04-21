@@ -36,6 +36,121 @@ body{
     border-radius: 6px;
 }
 
+.big-image{
+    position: relative;
+}
+
+.big-image > .img-info{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 60px;
+    left: 40px;
+}
+
+.img-info > .uno{
+    display: flex;
+    align-items: center;
+}
+
+.img-info > .uno > p{
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.img-info > .uno > .discount-porcentaje{
+    margin-left: 20px;
+    color: var(--colorTercero);
+    padding: 3px 7px;
+    background: rgb(247,121,31);
+    background: linear-gradient(90deg, rgba(247,121,31,0.22452731092436973) 0%, rgba(255,61,103,0.15730042016806722) 100%);
+    border-radius: 12px;
+}
+
+.img-info > .dos > h2{
+    font-size: 45px;
+}
+
+.img-info > .dos > .t-dif{
+    color: var(--colorPrincipal);
+}
+
+.img-info > .tres{
+    margin: 10px 0;
+}
+
+.img-info > .tres > p{
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.img-info > .cuatro > button{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorTercero);
+    border: none;
+    border-radius: 6px;
+    width: 160px;
+    height: 45px;
+    padding: 0 17px;
+    cursor: pointer;
+}
+
+.small-images{
+    position: relative;
+}
+
+.small-images > .img-info-2{
+    position: absolute;
+    top: 30px;
+}
+
+.small-images > .dif-1{
+    position: absolute;
+    top: 30px;
+    left: 408px;
+}
+
+.small-images > .img-info-2 > .cinco > .p-info{
+    background-color: rgba(255, 255, 255, 0.609);
+    width: 240px;
+    height: 80px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-left: 10px;
+}
+
+.small-images > .img-info-2 > .cinco > .p-info > .disc-p{
+    color: var(--colorTercero);
+    font-weight: 500;
+}
+
+.small-images > .img-info-2 > .cinco > .p-info > .p-img{
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.shop-now{
+    margin-top: 55px;
+    margin-left: 18px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .first-images > .small-images{
     width: 100%;
     display: flex;
@@ -56,6 +171,96 @@ body{
     align-items: center;
     flex-direction: column;
     flex: 3;
+    position: relative;
+}
+
+.second-images > .dif-3{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+.second-images > .dif-3 > .cinco > .p-info > .disc-p{
+    font-size: 40px;
+    color: var(--colorTercero);
+}
+
+.second-images > .dif-3 > .cinco > .p-info > .disc-p > .p-small{
+    font-size: 20px;
+    color: var(--textColor);
+}
+
+.second-images > .dif-3 > .cinco > .p-info > h3 {
+    font-size: 25px;
+    color: var(--colorPrincipal);
+}
+
+.second-images > .dif-3 > .cinco > .p-info > .p-img {
+    margin-top: 10px;
+    color: var(--textColor);
+}
+
+.second-images > .dif-3 > .cinco > .shop-now {
+    margin-top: 5px;
+    margin-left: 0;
+    color: black;
+}
+
+
+.second-images > .dif-4{
+    position: absolute;
+    left: 25px;
+    top: 250px;
+}
+
+.second-images > .dif-4 > .cinco > .p-info > h3 {
+    font-size: 25px;
+    color: var(--colorPrincipal);
+}
+
+.second-images > .dif-4 > .cinco > .p-info > h3:nth-child(2) {
+    font-size: 25px;
+    color: var(--colorTercero);
+}
+
+.second-images > .dif-4 > .cinco > .p-info > .p-img {
+    margin-top: 10px;
+    color: var(--textColor);
+}
+
+.second-images > .dif-4 > .cinco > .shop-now {
+    margin-top: 5px;
+    margin-left: 0;
+    color: black;
+}
+
+.second-images > .dif-5{
+    position: absolute;
+    left: 8px;
+    top: 483px;
+}
+
+.second-images > .dif-5 > .cinco > .p-info{
+    background-color: rgba(255, 255, 255, 0.609);
+    width: 240px;
+    height: 80px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-left: 10px;
+}
+
+.second-images > .dif-5 > .cinco > .p-info > .disc-p{
+    color: var(--colorTercero);
+    font-weight: 500;
+}
+
+.second-images > .dif-5 > .cinco > .p-info > .p-img{
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.second-images > .dif-5 > .cinco > .shop-now{
+    margin-top: 56px;
 }
 
 .second-images > img{
@@ -1219,14 +1424,7 @@ body{
     .def{
         height: auto !important;
     }
-}
 
-@media screen and (max-width: 754px) {
-
-    main{
-        padding: 7px 10px;
-    }
-    
     .discounts-banner{
         flex-direction: column;
         align-items: center;
@@ -1248,6 +1446,19 @@ body{
     .second-images{
         width: 100%;
     }
+
+    .small-images > .dif-1{
+        left: 0;
+        top: 250px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+
+    main{
+        padding: 7px 10px;
+    }
+
     
     .fav-products{
         justify-content: center;
@@ -1256,13 +1467,61 @@ body{
     .formulario{
         width: 90%;
     }
-    
+
+
+    .big-image > .img-info{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 30px;
+        left: 40px;
+    }
+
 }
 
 @media screen and (max-width: 610px) {
     .formulario{
         margin: 0 30px;
     }
+
+    .big-image > .img-info{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 10px;
+        left: 40px;
+    }
+
+    .img-info > .dos > h2{
+        font-size: 35px;
+    }
+    
+    .img-info > .dos > .t-dif{
+        color: var(--colorPrincipal);
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .img-info > .dos > h2{
+        font-size: 27px;
+    }
+
+    .img-info > .cuatro > button{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--colorTercero);
+        border: none;
+        border-radius: 6px;
+        width: 120px;
+        height: 35px;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    
 }
 
 @media screen and (max-width: 446px) {
