@@ -49,6 +49,8 @@ function traerFavoritos() {
   
             document.querySelector(".fav-products").innerHTML = productCards;
 
+
+
             // MOSTRAR LOS CONTROLES DE CADA PRODUCTO
             let imgButton = document.querySelectorAll(".product-card-img");
             let controls = document.querySelectorAll(".product-controls");
@@ -61,6 +63,8 @@ function traerFavoritos() {
                     })
                 })
             })
+
+
 
             // FUCIONALIDAD DEL BOTON DE FAVRITOS
             let sendButton = document.querySelectorAll(".send-favorites");
@@ -80,6 +84,8 @@ function traerFavoritos() {
                       location.reload()
                 })
             })
+
+
 
             // AGREGA EL PRODUCTO AL CARRITO O LE SUMA UNA UNIDAD A LA CANTIDAD
             const addButtons = document.querySelectorAll(".add-cart")
@@ -127,6 +133,7 @@ function traerFavoritos() {
   }
   
   traerFavoritos();
+  
 
 // ESTA FUNCION SE ENCARGA DE ACTUALIZAR LA INFORMACION EN EL CARRITO (PRODUCTOS, PRECIO, ETC)
 function actualizarCarrito(){
